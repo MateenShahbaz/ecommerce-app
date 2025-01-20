@@ -1,10 +1,14 @@
-import React from 'react'
-import { Stack } from 'expo-router'
+import "@/global.css";
+import React from "react";
+import { Stack } from "expo-router";
+import { GluestackUIProvider } from "@/components/ui/gluestack-ui-provider";
 
 const RootLayout = () => {
   return (
-    <Stack/>
-  )
-}
+    <GluestackUIProvider>
+      <Stack />
+    </GluestackUIProvider>
+  );
+};
 
-export default RootLayout
+export default RootLayout;
